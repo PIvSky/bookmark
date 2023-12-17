@@ -38,7 +38,6 @@ const Navbar = () => {
                     <img 
                         src={BookmarkLogoWhite} 
                         alt='bookmark-logo'
-                        style={{ fill: 'white' }}
                     />
                     <button className='navbar-btn-close'>
                         <img 
