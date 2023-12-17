@@ -1,0 +1,89 @@
+/*
+    MOBILE
+*/
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 110px;
+  margin-inline: 30px;
+  font-family: "Rubik", sans-serif;
+  font-weight: 400;
+  font-weight: 400;
+  letter-spacing: 3px;
+}
+header .navbar {
+  z-index: 5;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  position: fixed;
+  margin: auto;
+  padding: 0px;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 100%;
+  transition: 1.5s;
+  transform: translateY(-100vh);
+  background-color: hsla(228, 29%, 21%, 0.961);
+  color: hsla(0, 0%, 100%, 0.659);
+}
+header .navbar .navbar-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 110px;
+  margin-inline: 30px;
+}
+header .navbar .navbar-header .navbar-btn-close {
+  background: none;
+  border: none;
+}
+header .navbar .navbar-header .navbar-btn-close .navbar-btn__icon {
+  fill: black;
+}
+header .navbar .navbar-elements {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  list-style: none;
+  padding: 0px;
+  margin-inline: 30px;
+  margin-top: 0px;
+}
+header .navbar .navbar-elements .navbar-elements__item {
+  padding: 20px;
+  border-top: 0.5px solid hsla(0, 0%, 100%, 0.659);
+}
+header .navbar .navbar-elements .navbar-elements__item:last-child {
+  border-bottom: 0.5px solid hsla(0, 0%, 100%, 0.659);
+}
+header .navbar .navbar-btn {
+  margin-inline: 30px;
+  padding-block: 8px;
+  background: none;
+  color: hsla(0, 0%, 100%, 0.659);
+  font-family: "Rubik", sans-serif;
+  font-size: 1rem;
+  letter-spacing: 3px;
+  border: 2.5px solid hsla(0, 0%, 100%, 0.659);
+  border-radius: 5px;
+}
+header .navbar .navbar-sm {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 40px;
+  margin-top: auto;
+}
+header .navbar .navbar-sm svg {
+  padding-inline: 20px;
+}
+header .header-btn {
+  background: none;
+  border: none;
+}
+header .responsive_nav {
+  transform: none;
+}/*# sourceMappingURL=Navbar.css.map */
