@@ -6,7 +6,7 @@ const MainPage = () => {
         <div className='main-container'>
             <div className='main-pic'>
                 <img className='main-pic__image' src={MainImage} alt='main-hero'></img>                
-                <svg width="100%" height="100%">
+                <svg className='main-pic__graphic'width="100%" height="100%">
                     <rect x="80" y="0" width="150%" height="75%" rx="90" ry="90" fill="none"/>
                 </svg>
 

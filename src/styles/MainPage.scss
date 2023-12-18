@@ -9,7 +9,7 @@
     
     .main-pic {
         position: relative;
-        width: auto;
+        width: 100vw;
       
         &__image {
           z-index: 5;
@@ -17,7 +17,7 @@
           width: 98%;
         }
       
-        svg {
+        &__graphic {
           position: absolute;
           top: 60px;
           left: 0px;
@@ -28,7 +28,6 @@
           }
         }
       }
-      
 
     .main-content {
         margin: map-get($margin, margin-inline-mobile );
@@ -58,7 +57,7 @@
             .main-buttons__chrome {
                 background-color: map-get($colors, primary );
                 box-shadow: 0px 9px 17px 2px rgba(150, 150, 150, 0.32);
-                color: map-get($colors, white-col );
+                color: map-get($colors, white-bg );
                 border: none;
             }
             .main-buttons__firefox {
@@ -66,6 +65,58 @@
                 // background-color: map-get($colors, white-col );
                 color: map-get($colors, gray-col );
                 border: none;
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 1100px) {
+
+    .main-container {
+        padding-top: 60px;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: 1fr;
+        grid-column-gap: 0px;
+        grid-row-gap: 0px;
+
+        .main-pic {
+            grid-area: 1 / 2 / 2 / 3;
+            width: 100%;
+            right: 0px;
+
+            &__image {
+                position: relative;
+                right: 50px;
+                width: 90%;
+            }
+
+            &__graphic {
+                top: 140px;
+                right: 0px;
+                
+                rect {
+                    x: 190;
+                    rx: 180;
+                    ry: 180;
+                }
+            }
+        }
+        
+        .main-content {
+            text-align: start;
+            grid-area: 1 / 1 / 2 / 2;
+            width: 50%;
+            padding-left: map-get($padding, padding-inline-desktop );
+            padding-top: 30px;
+
+            h2 {
+                font-size: map-get($font-size, title-md);
+                letter-spacing: 2px;
+            }
+
+            p {
+                padding-left: 0px;
             }
         }
     }
