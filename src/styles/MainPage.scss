@@ -1,0 +1,72 @@
+@import '../styles/Fonts.scss';
+@import '../styles/Utilities.scss';
+@import '../styles/Colors.scss';
+
+.main-container {
+    text-align: center;
+    font-family: map-get($fonts, basic );
+    font-weight: 400;
+    
+    .main-pic {
+        position: relative;
+        width: auto;
+      
+        &__image {
+          z-index: 5;
+          height: auto;
+          width: 98%;
+        }
+      
+        svg {
+          position: absolute;
+          top: 60px;
+          left: 0px;
+          z-index: -1;
+      
+          rect {
+            fill: map-get($colors, primary);
+          }
+        }
+      }
+      
+
+    .main-content {
+        margin: map-get($margin, margin-inline-mobile );
+
+        h2 {
+            color: map-get($colors, blue-transparent ) ;
+        }
+
+        p {
+            color: map-get($colors, gray-col ) ;
+            font-size: map-get($font-size, small );
+            line-height: 1.8;
+            padding-inline: 10px;
+        }
+
+        .main-buttons {
+            
+            padding-top: 15px;
+
+            button {
+                padding: 15px 20px;
+                border: 1px solid;
+                border-radius: 5px;
+                margin-inline: 5px;
+                font-weight: 600;
+            }
+            .main-buttons__chrome {
+                background-color: map-get($colors, primary );
+                box-shadow: 0px 9px 17px 2px rgba(150, 150, 150, 0.32);
+                color: map-get($colors, white-col );
+                border: none;
+            }
+            .main-buttons__firefox {
+                box-shadow: 0px 9px 17px 2px rgba(150, 150, 150, 0.32);
+                // background-color: map-get($colors, white-col );
+                color: map-get($colors, gray-col );
+                border: none;
+            }
+        }
+    }
+}

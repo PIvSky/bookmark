@@ -89,8 +89,8 @@ header .responsive_nav {
 }
 
 @media screen and (min-width: 1100px) {
-  header .header-logo {
-    padding-left: 150px;
+  header {
+    padding-inline: 150px;
   }
   header .navbar {
     font-size: 0.8rem;
@@ -100,7 +100,6 @@ header .responsive_nav {
     align-items: center;
     position: relative;
     height: 110px;
-    padding-right: 150px;
     background: none;
     color: hsl(229, 31%, 21%);
     z-index: 0;
