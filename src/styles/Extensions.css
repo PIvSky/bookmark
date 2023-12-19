@@ -1,1 +1,16 @@
-/*# sourceMappingURL=Extensions.css.map */
+.extensions-container {
+  margin-inline: 30px;
+}
+.extensions-container .extensions-title {
+  font-family: "Rubik", sans-serif;
+  text-align: center;
+  font-weight: 500;
+}
+.extensions-container .extensions-desc {
+  font-family: "Rubik", sans-serif;
+  font-weight: 400;
+  color: hsl(229, 8%, 60%);
+  text-align: center;
+  font-size: 0.9rem;
+  line-height: 1.6;
+}/*# sourceMappingURL=Extensions.css.map */

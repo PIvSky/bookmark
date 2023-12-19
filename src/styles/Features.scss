@@ -1,13 +1,13 @@
 @import '../styles/Fonts.scss';
 @import '../styles/Utilities.scss';
 @import '../styles/Colors.scss';
+@import '../styles/_mixin.scss';
 
 .features-container {
     font-family: map-get($fonts, basic );
     padding-top: 100px;
     margin-inline: map-get($margin, margin-inline-mobile );
-    // display: flex;
-    // justify-content: center;
+
     
     .features-content {
         display: flex;
@@ -17,14 +17,12 @@
         text-align: center;
         
         &__title {
-            letter-spacing: 1px;
+            @include title-mb;
         }
     
         &__article {
+            @include desc-mb;
             margin-top: 0px;
-            color: map-get($colors, gray-col );
-            letter-spacing: map-get($lt-space, medium );
-            line-height: 1.8;
         }
     }
 
@@ -106,9 +104,13 @@
         margin: map-get($margin, margin-inline-mobile );
         font-family: map-get($fonts, basic );
         padding-top: 25px;
+
+        &__title {
+            @include title-mb
+        }
+
         p{
-            color: map-get($colors, gray-col );
-            line-height: 1.8;
+            @include desc-mb
         }
     }
 }

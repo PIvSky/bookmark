@@ -1,0 +1,15 @@
+@import '../styles/Fonts.scss';
+@import '../styles/Utilities.scss';
+@import '../styles/Colors.scss';
+@import '../styles/_mixin.scss';
+
+.extensions-container {
+    margin-inline: map-get($margin, margin-inline-mobile);
+
+    .extensions-title {
+        @include title-mb
+    }
+    .extensions-desc {
+        @include desc-mb;
+    }
+}

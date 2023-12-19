@@ -94,7 +94,7 @@ header .responsive_nav {
     letter-spacing: 1px;
   }
   header .navbar {
-    font-size: 0.8rem;
+    font-size: 0.9rem;
     transform: none;
     flex-direction: row;
     justify-content: flex-end;
@@ -115,7 +115,7 @@ header .responsive_nav {
     margin: 0px;
   }
   header .navbar .navbar-btn {
-    font-size: 0.8rem;
+    font-size: 0.9rem;
     padding: 15px 30px;
     border: 1px solid hsl(0, 94%, 66%);
     background-color: hsl(0, 94%, 66%);

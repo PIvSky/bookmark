@@ -26,12 +26,17 @@
   margin: 30px;
 }
 .main-container .main-content h2 {
-  color: hsla(228, 29%, 21%, 0.961);
+  font-family: "Rubik", sans-serif;
+  text-align: center;
+  font-weight: 500;
 }
 .main-container .main-content p {
+  font-family: "Rubik", sans-serif;
+  font-weight: 400;
   color: hsl(229, 8%, 60%);
+  text-align: center;
   font-size: 0.8rem;
-  line-height: 1.8;
+  line-height: 1.6;
   padding-inline: 10px;
 }
 .main-container .main-content .main-buttons {
@@ -92,7 +97,7 @@
     padding-top: 30px;
   }
   .main-container .main-content h2 {
-    font-size: 1.8rem;
+    font-size: 1.5rem;
     letter-spacing: 2px;
   }
   .main-container .main-content p {
