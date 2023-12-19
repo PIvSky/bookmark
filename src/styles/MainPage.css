@@ -5,7 +5,8 @@
 }
 .main-container .main-pic {
   position: relative;
-  width: 100vw;
+  width: 100%;
+  max-width: 1100px;
 }
 .main-container .main-pic__image {
   z-index: 5;
