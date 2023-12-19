@@ -1,0 +1,15 @@
+@import '../styles/Fonts.scss';
+@import '../styles/Utilities.scss';
+@import '../styles/Colors.scss';
+@import '../styles/_mixin.scss';
+
+.button {
+    background-color: map-get($colors, primary );
+    color: map-get($colors, white-bg );
+    margin: 20px auto;
+    padding: 15px 25px;
+    border: 1px solid;
+    border-radius: 5px;
+    margin-inline: 5px;
+    font-weight: map-get($fonts-weight, button );
+}

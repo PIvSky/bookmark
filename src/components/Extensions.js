@@ -27,7 +27,7 @@ const Extensions = () => {
 
     return (
         <>
-            <div className='extensions-container'>
+            <div className='extensions-header'>
                 <h2 className='extensions-title'>Download the extension</h2>
                 <p className='extensions-desc'>We've got more browsers in the pipeline. Please do let us know if you've got a favourite you'd like us to prioritize.</p>
             </div>

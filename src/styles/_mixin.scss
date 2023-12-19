@@ -2,6 +2,7 @@
     font-family: map-get($fonts, basic );
     text-align: center;
     font-weight: map-get($fonts-weight, medium );
+    letter-spacing: 1px;
 };
 
 @mixin desc-mb {
@@ -12,3 +13,9 @@
     font-size: map-get($font-size, small );
     line-height: 1.6;
 };
+
+@mixin desc-dt {
+    @include desc-mb;
+    margin: auto;
+    width: 33%;
+}

@@ -5,7 +5,7 @@
 
 .card-container {
     height: auto;
-    margin-inline: map-get($margin, margin-inline-mobile );
+    margin: 40px map-get($margin, margin-inline-mobile );
 
     -webkit-box-shadow: 0px 0px 36px -23px rgba(66, 68, 90, 1);
     -moz-box-shadow: 0px 0px 36px -23px rgba(66, 68, 90, 1);
@@ -35,7 +35,8 @@
     }
 
     .card-dots {
-        padding-top: 25px
+        padding-top: 25px;
+        width: 100%;
     }
 
     .card-button {

@@ -29,6 +29,7 @@
   font-family: "Rubik", sans-serif;
   text-align: center;
   font-weight: 500;
+  letter-spacing: 1px;
 }
 .main-container .main-content p {
   font-family: "Rubik", sans-serif;
@@ -97,10 +98,14 @@
     padding-top: 30px;
   }
   .main-container .main-content h2 {
-    font-size: 1.5rem;
-    letter-spacing: 2px;
+    text-align: start;
+    font-size: 2.3rem;
   }
   .main-container .main-content p {
+    text-align: start;
     padding-left: 0px;
+  }
+  .main-container .main-buttons .main-buttons__chrome {
+    margin-left: 0;
   }
 }/*# sourceMappingURL=MainPage.css.map */

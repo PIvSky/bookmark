@@ -112,12 +112,19 @@
             padding-top: 30px;
 
             h2 {
-                font-size: map-get($font-size, title-md);
-                letter-spacing: 2px;
+                text-align: start;
+                font-size: map-get($font-size, title-lg);
             }
 
             p {
+                text-align: start;
                 padding-left: 0px;
+            }
+        }
+
+        .main-buttons {
+            .main-buttons__chrome {
+                margin-left: 0;
             }
         }
     }

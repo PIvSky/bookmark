@@ -121,8 +121,7 @@
 
         .features-content {
             &__article {
-                width: 40%;
-                font-size: map-get($font-size, small );
+                @include desc-dt;
                 letter-spacing: 0px;
                 margin-bottom: 40px;
             }
