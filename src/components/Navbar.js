@@ -8,6 +8,7 @@ import CloseMenuIcon from '../assets/images/icon-close.svg';
 // import FacebookIcon from '../assets/images/icon-facebook.svg';
 // import TwitterIcon from '../assets/images/icon-twitter.svg';
 
+export const navElements = ['FEATURES', 'PRICING', 'CONTACT'];
 
 const Navbar = () => {
 
@@ -49,15 +50,11 @@ const Navbar = () => {
                     </button>
                 </div>
                 <ul className='navbar-elements'>
-                    <li className='navbar-elements__item'>
-                        FEATURES
+                    {navElements.map((element, index) => (
+                        <li key={index} className='navbar-elements__item'>
+                        {element}
                     </li>
-                    <li className='navbar-elements__item'>
-                        PRICING
-                    </li>
-                    <li className='navbar-elements__item'>
-                        CONTACT
-                    </li>
+                    ))}
                 </ul>
                 <button className='navbar-btn'>LOGIN</button>
                 <div className='navbar-sm'>
