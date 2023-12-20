@@ -1,0 +1,58 @@
+@import '../styles/Fonts.scss';
+@import '../styles/Utilities.scss';
+@import '../styles/Colors.scss';
+@import '../styles/_mixin.scss';
+
+.question-wrapper {
+    .question-card {
+        margin: 0 map-get($margin, margin-inline-mobile);
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-content: center;
+        border-bottom: 1px solid map-get($colors, gray-col );
+
+        &__title {
+            @include title-mb;
+            font-size: map-get($font-size, small );
+            text-align: start;
+        };
+
+        &__arrow {
+            align-self: center;
+            stroke: #ff0000;
+            
+        };
+
+        .active {
+            transform: rotate(180deg);
+                path {
+                  stroke: #ff0000; 
+                }
+        };
+    };
+
+    .answer-card {
+        margin: 0 map-get($margin, margin-inline-mobile);
+        display: none;
+
+        &__content {
+            @include desc-mb;
+            text-align: start;
+        }
+    }
+
+    .open{
+        display: block;
+    }   
+}
+
+@media screen and (min-width: 800px) {
+    .question-wrapper {
+        width: 50%;
+        margin: 0 auto;
+        // &:first-child {
+        //     border-top: 1px solid map-get($colors, gray-col);
+        //   }
+      }
+}

@@ -1,0 +1,30 @@
+@import '../styles/Fonts.scss';
+@import '../styles/Utilities.scss';
+@import '../styles/Colors.scss';
+@import '../styles/_mixin.scss';
+
+.questions-header {
+    margin: 0 map-get($margin, margin-inline-mobile );
+    padding: 100px 0 20px;
+    &__title {
+        @include title-mb;
+    }
+
+    &__desc {
+        @include desc-mb
+    }
+}
+
+.button-container {
+    text-align: center;
+    margin: 20px auto 0;
+}
+
+@media screen and (min-width: 800px) {
+    .questions-header {
+        margin-top: 100px;
+        &__desc {
+            @include desc-dt;
+        }
+    }
+}

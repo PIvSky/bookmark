@@ -1,0 +1,49 @@
+.question-wrapper .question-card {
+  margin: 0 30px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-content: center;
+  border-bottom: 1px solid hsl(229, 8%, 60%);
+}
+.question-wrapper .question-card__title {
+  font-family: "Rubik", sans-serif;
+  text-align: center;
+  font-weight: 500;
+  letter-spacing: 1px;
+  font-size: 0.8rem;
+  text-align: start;
+}
+.question-wrapper .question-card__arrow {
+  align-self: center;
+  stroke: #ff0000;
+}
+.question-wrapper .question-card .active {
+  transform: rotate(180deg);
+}
+.question-wrapper .question-card .active path {
+  stroke: #ff0000;
+}
+.question-wrapper .answer-card {
+  margin: 0 30px;
+  display: none;
+}
+.question-wrapper .answer-card__content {
+  font-family: "Rubik", sans-serif;
+  font-weight: 400;
+  color: hsl(229, 8%, 60%);
+  text-align: center;
+  font-size: 0.8rem;
+  line-height: 1.6;
+  text-align: start;
+}
+.question-wrapper .open {
+  display: block;
+}
+
+@media screen and (min-width: 800px) {
+  .question-wrapper {
+    width: 50%;
+    margin: 0 auto;
+  }
+}/*# sourceMappingURL=QuestionCard.css.map */
