@@ -4,7 +4,7 @@
   flex-direction: row;
   justify-content: space-between;
   align-content: center;
-  border-bottom: 1px solid hsl(229, 8%, 60%);
+  border-bottom: 1px solid;
 }
 .question-wrapper .question-card__title {
   font-family: "Rubik", sans-serif;

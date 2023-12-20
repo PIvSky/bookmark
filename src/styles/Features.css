@@ -37,12 +37,11 @@
   position: relative;
   margin: 0px;
   padding-block: 15px;
-  border-bottom: 1.2px solid hsl(229, 8%, 60%);
+  border-bottom: 1.2px solid;
   border-inline: none;
-  color: hsl(229, 8%, 60%);
 }
 .features-container .features-nav__element:first-child {
-  border-top: 1px solid hsl(229, 8%, 60%);
+  border-top: 1px solid;
 }
 .features-container .features-nav__element:hover {
   color: hsl(0, 94%, 66%);

@@ -12,4 +12,21 @@
     border-radius: 5px;
     margin-inline: 5px;
     font-weight: map-get($fonts-weight, button );
+    cursor: pointer;
+}
+
+.button-red {
+    background-color: map-get($colors, red-col );
+    color: map-get($colors, white-bg );
+    border-color: map-get($colors, red-col );
+    margin-inline: 0;
+    white-space: nowrap;
+}
+
+.button-grey {
+    
+}
+
+.button-navbar {
+
 }

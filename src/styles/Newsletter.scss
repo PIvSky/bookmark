@@ -1,0 +1,84 @@
+@import '../styles/Fonts.scss';
+@import '../styles/Utilities.scss';
+@import '../styles/Colors.scss';
+@import '../styles/_mixin.scss';
+
+.newsletter {
+    background-color: map-get($colors, primary );
+    &-container {
+        margin: 0 map-get($margin, margin-inline-mobile );
+        padding-top: 40px;
+        display: flex;
+        flex-direction: column;
+        // align-items: center;
+        justify-content: center;
+
+        &__joined {
+            @include desc-mb;
+            color: map-get($colors, white-bg );
+        }
+
+        &__title {
+            margin: 0 auto 20px;
+            @include title-mb;
+            color: map-get($colors, white-bg );
+            max-width: 450px;
+        }
+
+        &__input {
+            border: none;
+            border-radius: 3px;
+            height: 40px;
+        }
+
+        &__button {
+            background-color: map-get($colors, red-col );
+            color: map-get($colors, white-bg );
+            margin-inline: 0;
+            padding-bottom: 70px;
+        }
+
+        .email-container {
+            display: flex;
+            flex-direction: column;
+            margin: 0 auto 40px;
+            width: 100%;
+            max-width: 450px;
+            &__input {
+                border: 2px solid map-get($colors, white-bg );
+                border-radius: 5px;
+                height: 40px;
+            }
+    
+            &__button {
+                background-color: map-get($colors, red-col );
+                color: map-get($colors, white-bg );
+                margin-inline: 0;
+                padding-bottom: 70px;
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 800px) {
+    .newsletter {
+        &-container {
+            width: 50%;
+            margin: 0 auto;
+
+            &__title {
+                margin: 20px auto 40px
+            }
+        }
+        .email-container{
+            flex-direction: row;
+            align-items: center;
+            justify-content: center;
+            width: 50%;
+            &__input {
+                min-width: 250px;
+                margin-right: 20px;
+            }
+        }
+    }
+}

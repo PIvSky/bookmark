@@ -8,7 +8,7 @@
 @mixin desc-mb {
     font-family: map-get($fonts, basic );
     font-weight: map-get($fonts-weight, regular );
-    color: map-get($colors, gray-col );
+    color: map-get($colors, grey-col );
     text-align: center;
     font-size: map-get($font-size, small );
     line-height: 1.6;
