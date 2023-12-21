@@ -1,12 +1,12 @@
 import '../styles/Button.scss';
 
-const Button = ({text, buttonStyle, additionalClass}) => {
+const Button = ({text, buttonStyle, additionalClass, onClick}) => {
 
     const buttonClasses = buttonStyle ? `button ${additionalClass}` : 'button';
  
 
     return (
-        <button className={buttonClasses}>{text}</button>
+        <button onClick={onClick} className={buttonClasses}>{text}</button>
     )
 }
 

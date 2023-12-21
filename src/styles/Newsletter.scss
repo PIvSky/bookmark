@@ -26,36 +26,43 @@
             max-width: 450px;
         }
 
-        &__input {
-            border: none;
-            border-radius: 3px;
-            height: 40px;
-        }
-
-        &__button {
-            background-color: map-get($colors, red-col );
-            color: map-get($colors, white-bg );
-            margin-inline: 0;
-            padding-bottom: 70px;
-        }
-
         .email-container {
             display: flex;
             flex-direction: column;
             margin: 0 auto 40px;
             width: 100%;
             max-width: 450px;
-            &__input {
-                border: 2px solid map-get($colors, white-bg );
-                border-radius: 5px;
-                height: 40px;
-            }
+
+            .input-container {
+                position: relative;
+                display: flex;
+                flex-direction: column;
+                &__input {
+                    border: 2px solid map-get($colors, white-bg );
+                    border-radius: 5px;
+                    height: 40px;
+                    border-bottom-right-radius: 0px;
+                    border-bottom-left-radius: 0px;
+                }
     
-            &__button {
-                background-color: map-get($colors, red-col );
-                color: map-get($colors, white-bg );
-                margin-inline: 0;
-                padding-bottom: 70px;
+                &__error {
+                    position: absolute;
+                    display: none;
+                    right: 10px;
+                    top: 11px;
+                    height: 25px;
+                    width: 25px;
+                }
+                
+                &__validation {
+                    display: none;
+                    font-style: italic;
+                    color: map-get($colors, white-col );
+                    font-family: map-get($fonts, basic );
+                    font-size: 0.6rem;
+                    background-color: map-get($colors, red-col );
+                    padding: 5px 15px 5px;
+                }
             }
         }
     }

@@ -1,7 +1,10 @@
+import { useState, useRef } from 'react';
 import '../styles/Newsletter.scss';
 import Button from './Button';
 import '../styles/Button.scss';
 import { useSpring, animated } from 'react-spring';
+import IconError from '../assets/images/icon-error.svg';
+import validEmail from '../validation/Validation';
 
 const AnimatedCounting = ({n}) => {
     const { number } = useSpring({
@@ -16,11 +19,43 @@ const AnimatedCounting = ({n}) => {
 
 const Newsletter = () => {
 
+    const [email, setEmail] = useState('');
+    const emailRef = useRef(null);
+    const errorRef = useRef(null);
+    const validationRef = useRef(null);
+
     // button props
     const buttonProps = {
         text : 'Contact Us',
         style : true,
         className :'button-red'
+    }
+
+    // email value
+    const emailValue = (event) => {
+        setEmail(event.target.value)
+    }
+
+    // on click handler
+    const newsletterHandler = () => {
+        const emailBorder = emailRef.current && emailRef.current.style;
+        const validationText = validationRef.current && validationRef.current.style;
+        const errorImage = errorRef.current && errorRef.current.style;
+
+        if (emailBorder && validationText && errorImage) {
+            if (!validEmail.test(email) && email !== '') {
+            emailBorder.border = '2px solid hsl(0, 94%, 66%)';
+            validationText.display = 'block';
+            errorImage.display = 'block';
+            } else {
+                alert('Newsletter signed up!')
+                emailBorder.border = '2px solid hsl(0, 0%, 100%)';
+                validationText.display = 'none';
+                errorImage.display = 'none';
+            }
+        }
+        console.log(email)
+        setEmail('')
     }
 
     return (
@@ -30,8 +65,20 @@ const Newsletter = () => {
                     <p className='newsletter-container__joined'><AnimatedCounting n={0} /> + ALREADY JOINED</p>
                     <h2 className='newsletter-container__title'>Stay up-to-date with what we're doing</h2>
                     <div className='email-container'>
-                        <input className='email-container__input' placeholder='Enter your email adress'></input>
+                        <div className='input-container'>
+                            <input 
+                                ref={emailRef}
+                                type='email' 
+                                value={email} 
+                                onChange={emailValue} 
+                                className='input-container__input' 
+                                placeholder='Enter your email adress'>
+                            </input>
+                            <img ref={errorRef} className='input-container__error' src={IconError} alt='error' />   
+                            <span ref={validationRef} className='input-container__validation'> Whoops, make sure it's an email</span>
+                        </div>
                         <Button 
+                            onClick={newsletterHandler}
                             text={buttonProps.text} 
                             buttonStyle={buttonProps.style}
                             additionalClass={buttonProps.className}
