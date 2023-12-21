@@ -43,6 +43,15 @@ header .navbar .navbar-header .navbar-btn-close {
 header .navbar .navbar-header .navbar-btn-close .navbar-btn__icon {
   fill: black;
 }
+header .navbar .navbar-header .bookmark-logo g path {
+  fill: hsl(0, 0%, 100%);
+}
+header .navbar .navbar-header .bookmark-logo g circle {
+  fill: white;
+}
+header .navbar .navbar-header .bookmark-logo g path[fill="#FFF"] {
+  fill: hsla(228, 29%, 21%, 0.961);
+}
 header .navbar .navbar-elements {
   display: flex;
   flex-direction: column;
@@ -66,7 +75,10 @@ header .navbar .navbar-sm {
   padding-bottom: 40px;
   margin-top: auto;
 }
-header .navbar .navbar-sm svg {
+header .navbar .navbar-sm__fb {
+  padding-inline: 20px;
+}
+header .navbar .navbar-sm__tw {
   padding-inline: 20px;
 }
 header .header-btn {

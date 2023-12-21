@@ -50,16 +50,22 @@
 @media screen and (min-width:800px) {
 
     .button {
+        margin-top: 0;
         padding: 15px 25px;
-        font-weight: map-get($fonts-weight, button );
+        // font-weight: map-get($fonts-weight, button );
+    }
+
+    .button-red {
+        margin-top: 20px;
     }
 
     .button-navbar {
         background-color: map-get($colors, red-col );
         color: map-get($colors, white-bg );
         border-color: map-get($colors, red-col );
-        margin-inline: 0;
-        margin-left: 20px;
+        margin: 0px 0px 0px 20px;
+        // margin-inline: 0;
+        // margin-left: 20px;
         white-space: nowrap;
         padding: 10px 35px;
         letter-spacing: 1px;

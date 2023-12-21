@@ -43,14 +43,17 @@
 
 @media screen and (min-width: 800px) {
   .button {
+    margin-top: 0;
     padding: 15px 25px;
+  }
+  .button-red {
+    margin-top: 20px;
   }
   .button-navbar {
     background-color: hsl(0, 94%, 66%);
     color: hsl(0, 0%, 100%);
     border-color: hsl(0, 94%, 66%);
-    margin-inline: 0;
-    margin-left: 20px;
+    margin: 0px 0px 0px 20px;
     white-space: nowrap;
     padding: 10px 35px;
     letter-spacing: 1px;

@@ -21,11 +21,8 @@ const MainPage = () => {
     return (
         <div className='main-container'>
             <div className='main-pic'>
-                <img className='main-pic__image' src={MainImage} alt='main-hero'></img>                
-                <svg className='main-pic__graphic'width="100%" height="100%">
-                    <rect x="80" y="0" width="150%" height="75%" rx="90" ry="90" fill="none"/>
-                </svg>
-
+                <img className='main-pic__image' src={MainImage} alt='main-hero' />                
+                <div className='main-pic__graphic' />
             </div>
             <div className='main-content'>
                 <h2>A Simple Bookmark <br></br> Manager</h2>
@@ -45,6 +42,7 @@ const MainPage = () => {
                     }
                 </div>
             </div>
+            <div className='pic-graphic' />
         </div>
     )
 }

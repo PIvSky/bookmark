@@ -62,7 +62,7 @@
     margin: 0 auto;
   }
   .newsletter-container__title {
-    margin: 20px auto 40px;
+    margin: 20px auto 20px;
   }
   .newsletter .email-container {
     flex-direction: row;
