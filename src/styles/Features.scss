@@ -6,7 +6,7 @@
 .features-container {
     font-family: map-get($fonts, basic );
     padding-top: 100px;
-    margin-inline: map-get($margin, margin-inline-mobile );
+    margin: 0 map-get($margin, margin-inline-mobile );
 
     
     .features-content {
@@ -88,17 +88,6 @@
           width: 80%;
           margin: auto;
         }
-      
-        // &__graphic {
-        //   position: absolute;
-        //   top: 34px;
-        //   right: 0px;
-        //   z-index: -1;
-      
-        //   rect {
-        //     fill: map-get($colors, primary);
-        //   }
-        // }
 
         &__graphic {
             position: absolute;
@@ -109,8 +98,8 @@
             top: 16vh;
             right: 25vw;
             z-index: -1;
-            border-top-right-radius: 90px;
-            border-bottom-right-radius: 90px;
+            border-top-right-radius: 180px;
+            border-bottom-right-radius: 180px;
         }
     }
 
@@ -133,7 +122,8 @@
 @media screen and (min-width: 800px) {
 
     .features-container {
-
+        margin: 0 auto;
+        max-width: 1440px;
         .features-content {
             &__article {
                 @include desc-dt;
@@ -166,6 +156,8 @@
     }
 
     .features-tab {
+        margin: 0 auto;
+        max-width: 1440px;
         display: grid;
         grid-template-columns: repeat(2, 1fr);
         grid-template-rows: 1fr;
@@ -174,10 +166,11 @@
 
         .tab-pic {
             grid-area: 1 / 1 / 2 / 2;
+            max-width: 720px;
 
             &__image {
                 width: 100%;
-                margin: map-get($margin, margin-inline-mobile );
+                margin-inline: map-get($margin, margin-inline-mobile );
                 padding-left: map-get($padding, padding-inline-desktop );
             }
 
@@ -185,6 +178,7 @@
                 top: 12vh;
                 right: 8vw;
                 width: calc(100% - 8vw);
+
             }
         }
 
@@ -195,9 +189,11 @@
             flex-direction: column;
             justify-content: flex-start;
             text-align: start;
+            margin-top: 0px;
 
             &__title {
                 text-align: start;
+                margin-top: 0px;
             }
 
             .tab-content__content {

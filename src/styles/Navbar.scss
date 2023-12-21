@@ -11,7 +11,7 @@ header {
     justify-content: space-between;
     align-items: center;
     height: 110px;
-    margin-inline: map-get($margin, margin-inline-mobile );
+    margin: 0 map-get($margin, margin-inline-mobile );
     font-family: map-get($fonts, basic );
     font-weight: map-get($fonts-weight, regular );
     font-weight: 400;
@@ -127,6 +127,8 @@ header {
     header {
         padding-inline: map-get($padding, padding-inline-desktop );
         letter-spacing: 1px;
+        margin: 0 auto;    
+        max-width: 1440px;
 
         .navbar {
             font-size: map-get($font-size, small );

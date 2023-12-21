@@ -5,6 +5,7 @@
 
 .newsletter {
     background-color: map-get($colors, primary );
+    width: 100%;
     &-container {
         margin: 0 map-get($margin, margin-inline-mobile );
         padding-top: 40px;

@@ -1,5 +1,6 @@
 .newsletter {
   background-color: hsl(231, 69%, 60%);
+  width: 100%;
 }
 .newsletter-container {
   margin: 0 30px;

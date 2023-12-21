@@ -3,23 +3,30 @@
 @import '../styles/_colors.scss';
 @import '../styles/_mixin.scss';
 
-.extensions-header {
-    margin: 100px map-get($margin, margin-inline-mobile) 40px;
+.extension-wrapper {
+    margin: 0 auto;
 
-    .extensions-title {
-        @include title-mb
+    .extensions-header {
+        margin: 100px map-get($margin, margin-inline-mobile) 40px;
+    
+        .extensions-title {
+            @include title-mb
+        }
+        .extensions-desc {
+            @include desc-mb;
+            margin-inline: map-get($margin, margin-inline-mobile) 40px;
+        }
     }
-    .extensions-desc {
-        @include desc-mb;
-        margin-inline: map-get($margin, margin-inline-mobile) 40px;
+    
+    .extensions-container {
+        margin-inline: map-get($margin, margin-inline-mobile );
     }
 }
 
-.extensions-container {
-    margin-inline: map-get($margin, margin-inline-mobile );
-}
 
 @media screen and (min-width: 800px) {
+    .extension-wrapper {
+        max-width: 1440px;
     .extensions-header {
         .extensions-desc {
             @include desc-dt
@@ -45,5 +52,5 @@
         margin-top: 200px;
         margin-left: 20px;
       }
-
+    }
 }

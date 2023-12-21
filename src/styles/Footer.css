@@ -40,12 +40,17 @@
 }
 
 @media screen and (min-width: 800px) {
-  .footer {
+  .footer-wrapper {
+    background-color: hsl(229, 31%, 21%);
+  }
+  .footer-wrapper .footer {
+    margin: 0 auto;
+    max-width: 1440px;
     padding-inline: 150px;
     display: flex;
     align-items: center;
   }
-  .footer-nav {
+  .footer-wrapper .footer-nav {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -54,7 +59,7 @@
     padding-bottom: 0;
     margin-left: 30px;
   }
-  .footer-socialmedia {
+  .footer-wrapper .footer-socialmedia {
     padding-bottom: 0;
     margin-left: 20px;
   }

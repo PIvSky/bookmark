@@ -32,6 +32,7 @@ const Questions = () => {
 
     return (
       <>
+      <div className='qa-wrapper'>
         <div className="questions-header">
           <h2 className="questions-header__title">
             Frequently Asked Questions
@@ -41,6 +42,7 @@ const Questions = () => {
             like answered please feel free to email us.
           </p>
         </div>
+        <div className='card-wrapper'>
         {Questions.map((data, index) => (
           <QuestionCard
             key={index}
@@ -48,12 +50,14 @@ const Questions = () => {
             answer={data.answer}
           />
         ))}
+        </div>
         <div className="button-container">
             <Button 
               text={buttonProps.text} 
               buttonStyle={buttonProps.style}
               additionalClass={buttonProps.className} />
         </div>
+      </div>
       </>
     );
 }

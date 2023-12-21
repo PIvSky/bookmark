@@ -1,13 +1,16 @@
-.extensions-header {
+.extension-wrapper {
+  margin: 0 auto;
+}
+.extension-wrapper .extensions-header {
   margin: 100px 30px 40px;
 }
-.extensions-header .extensions-title {
+.extension-wrapper .extensions-header .extensions-title {
   font-family: "Rubik", sans-serif;
   text-align: center;
   font-weight: 500;
   letter-spacing: 1px;
 }
-.extensions-header .extensions-desc {
+.extension-wrapper .extensions-header .extensions-desc {
   font-family: "Rubik", sans-serif;
   font-weight: 400;
   color: hsl(229, 8%, 60%);
@@ -16,13 +19,15 @@
   line-height: 1.6;
   margin-inline: 30px 40px;
 }
-
-.extensions-container {
+.extension-wrapper .extensions-container {
   margin-inline: 30px;
 }
 
 @media screen and (min-width: 800px) {
-  .extensions-header .extensions-desc {
+  .extension-wrapper {
+    max-width: 1440px;
+  }
+  .extension-wrapper .extensions-header .extensions-desc {
     font-family: "Rubik", sans-serif;
     font-weight: 400;
     color: hsl(229, 8%, 60%);
@@ -32,7 +37,7 @@
     margin: auto;
     width: 33%;
   }
-  .extensions-container {
+  .extension-wrapper .extensions-container {
     max-width: 60%;
     max-height: 400px;
     display: flex;
@@ -42,11 +47,11 @@
     flex-wrap: nowrap;
     margin: 0 auto;
   }
-  .extensions-container > *:nth-child(2) {
+  .extension-wrapper .extensions-container > *:nth-child(2) {
     margin-top: 100px;
     margin-left: 20px;
   }
-  .extensions-container > *:nth-child(3) {
+  .extension-wrapper .extensions-container > *:nth-child(3) {
     margin-top: 200px;
     margin-left: 20px;
   }

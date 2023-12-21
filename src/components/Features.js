@@ -8,7 +8,7 @@ import Tab3 from '../assets/images/illustration-features-tab-3.svg';
 
 const Features = () => {
 
-    const [selectedFeature, setSelectedFeature] = useState(null);
+    const [selectedFeature, setSelectedFeature] = useState('bookmarking');
 
     const handleFeatureSelect = (feature) => {
         setSelectedFeature(feature);
@@ -37,6 +37,7 @@ const Features = () => {
           content = 'Easily share your bookmarks and collections with others. Create a shareable link that you can send at the click of a buton.';
           break;
         default:
+            picture = Tab1;
             title = 'Bookmark in one click';
             content = 'Organize your bookmarks however you like. Our simple drag-and-drop interface gives you complete control over how you manage your favourite sites';
       }
@@ -98,7 +99,6 @@ const Features = () => {
                     buttonStyle={buttonProps.style}
                     additionalClass={buttonProps.className}
                 />
-                {/* <button className='tab-content_button'>More Info</button> */}
             </div>
         </div>
     </>

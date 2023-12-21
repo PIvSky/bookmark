@@ -1,14 +1,14 @@
-.questions-header {
+.qa-wrapper .questions-header {
   margin: 0 30px;
   padding: 100px 0 20px;
 }
-.questions-header__title {
+.qa-wrapper .questions-header__title {
   font-family: "Rubik", sans-serif;
   text-align: center;
   font-weight: 500;
   letter-spacing: 1px;
 }
-.questions-header__desc {
+.qa-wrapper .questions-header__desc {
   font-family: "Rubik", sans-serif;
   font-weight: 400;
   color: hsl(229, 8%, 60%);
@@ -16,17 +16,17 @@
   font-size: 0.8rem;
   line-height: 1.6;
 }
-
-.button-container {
+.qa-wrapper .button-container {
   text-align: center;
   margin: 20px auto 0;
 }
 
 @media screen and (min-width: 800px) {
-  .questions-header {
+  .qa-wrapper .questions-header {
     margin-top: 100px;
+    margin: 0 auto;
   }
-  .questions-header__desc {
+  .qa-wrapper .questions-header__desc {
     font-family: "Rubik", sans-serif;
     font-weight: 400;
     color: hsl(229, 8%, 60%);
@@ -35,5 +35,10 @@
     line-height: 1.6;
     margin: auto;
     width: 33%;
+    max-width: 550px;
+  }
+  .qa-wrapper .card-wrapper {
+    margin: 0 auto;
+    max-width: 1440px;
   }
 }/*# sourceMappingURL=Questions.css.map */

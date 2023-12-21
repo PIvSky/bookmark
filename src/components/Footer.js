@@ -6,22 +6,24 @@ import { ReactComponent as TwIcon } from '../assets/images/icon-twitter.svg';
 
 const Footer = () => {
     return (
-        <footer className='footer'>
-            <div className='footer-title'>
-                <BookmarkLogo />
-            </div>
-            <ul className='footer-nav'>
-                {navElements.map((element, index) => (
-                    <li className='footer-nav__element' key={index}>
-                        {element}
-                    </li>
-                ))}
-            </ul>
-            <div className='footer-socialmedia'>
-                <FbIcon className='footer-socialmedia__item'/>
-                <TwIcon className='footer-socialmedia__item'/>
-            </div>
-        </footer>
+            <footer className='footer-wrapper' >
+                <div className='footer'>
+                    <div className='footer-title'>
+                        <BookmarkLogo />
+                    </div>
+                    <ul className='footer-nav'>
+                        {navElements.map((element, index) => (
+                            <li className='footer-nav__element' key={index}>
+                                {element}
+                            </li>
+                        ))}
+                    </ul>
+                    <div className='footer-socialmedia'>
+                        <FbIcon className='footer-socialmedia__item'/>
+                        <TwIcon className='footer-socialmedia__item'/>
+                    </div>
+                </div>
+            </footer>
     )
 }
 

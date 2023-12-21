@@ -29,21 +29,23 @@ const Extensions = () => {
 
     return (
         <>
-            <div className='extensions-header'>
-                <h2 className='extensions-title'>Download the extension</h2>
-                <p className='extensions-desc'>We've got more browsers in the pipeline. Please do let us know if you've got a favourite you'd like us to prioritize.</p>
-            </div>
-            <div className='extensions-container'>
-                {BrowsersData.map((browser, index) => (
-                    <BrowserCard
-                        key={index}
-                        logo={browser.logo}
-                        title={browser.title}
-                        version={browser.version}
-                        dots={CardDots}
-                    />
-                )
-                )}
+            <div className='extension-wrapper'>
+                <div className='extensions-header'>
+                    <h2 className='extensions-title'>Download the extension</h2>
+                    <p className='extensions-desc'>We've got more browsers in the pipeline. Please do let us know if you've got a favourite you'd like us to prioritize.</p>
+                </div>
+                <div className='extensions-container'>
+                    {BrowsersData.map((browser, index) => (
+                        <BrowserCard
+                            key={index}
+                            logo={browser.logo}
+                            title={browser.title}
+                            version={browser.version}
+                            dots={CardDots}
+                        />
+                    )
+                    )}
+                </div>
             </div>
         </>
     )
