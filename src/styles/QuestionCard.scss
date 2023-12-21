@@ -10,7 +10,7 @@
         flex-direction: row;
         justify-content: space-between;
         align-content: center;
-        border-bottom: 1px solid map-get($colors, gray-col );
+        border-bottom: 1px solid map-get($colors, grey-col );
 
         &__title {
             @include title-mb;

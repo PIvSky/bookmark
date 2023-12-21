@@ -49,6 +49,24 @@ header {
                     fill: black
                 }
             }
+
+            .bookmark-logo {
+                g {
+                    path {
+                        fill: map-get($colors, white-bg );
+                            
+                    }
+
+                    circle {
+                        fill: white;
+                    }
+
+                    path[fill="#FFF"] {
+                        fill: map-get($colors, blue-transparent );
+                    }
+                 }
+                
+            }
         }
 
         .navbar-elements {
@@ -69,18 +87,6 @@ header {
             }
         }
 
-        // .navbar-btn{
-        //     margin-inline: map-get($margin, margin-inline-mobile );
-        //     padding-block: 8px;
-        //     background: none;
-        //     color: map-get($colors, white-col );
-        //     font-family: map-get($fonts, basic );
-        //     font-size: 1rem;
-        //     letter-spacing: 3px;
-        //     border: 2.5px solid map-get($colors, white-col);
-        //     border-radius: 5px;
-        // }
-
         .navbar-sm {
             display: flex;
             justify-content: center;
@@ -88,7 +94,11 @@ header {
             padding-bottom: 40px;
             margin-top: auto;
 
-            svg {
+            &__fb {
+                padding-inline: 20px;
+            }
+
+            &__tw {
                 padding-inline: 20px;
             }
         }
