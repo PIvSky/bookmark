@@ -3,7 +3,12 @@ import Button from './Button';
 
 const BrowserCard = ({logo, title, version, dots}) => {
 
-    const buttonContent = 'Add & Install Extension';
+    // button props
+    const buttonProps = {
+        text : 'Add & Install Extension',
+        style : false,
+        className :''
+    }
 
     return (
         <>
@@ -12,7 +17,11 @@ const BrowserCard = ({logo, title, version, dots}) => {
                 <h3 className='card-title'>{title}</h3>
                 <p className='card-version'>{version}</p>
                 <img className='card-dots' src={dots} alt='dots'/>
-                <Button content={buttonContent}/>
+                <Button 
+                    text={buttonProps.text} 
+                    buttonStyle={buttonProps.style}
+                    additionalClass={buttonProps.className}
+                />
             </div>
         </>
     )

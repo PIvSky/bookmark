@@ -1,6 +1,6 @@
-@import '../styles/Fonts.scss';
-@import '../styles/Utilities.scss';
-@import '../styles/Colors.scss';
+@import '../styles/_fonts.scss';
+@import '../styles/_utilities.scss';
+@import '../styles/_colors.scss';
 @import '../styles/_mixin.scss';
 
 .features-container {
@@ -115,7 +115,7 @@
     }
 }
 
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 800px) {
 
     .features-container {
 

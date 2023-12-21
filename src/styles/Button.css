@@ -2,11 +2,10 @@
   background-color: hsl(231, 69%, 60%);
   color: hsl(0, 0%, 100%);
   margin: 20px auto;
-  padding: 15px 25px;
+  padding: 15px 15px;
   border: 1px solid;
   border-radius: 5px;
   margin-inline: 5px;
-  font-weight: 600;
   cursor: pointer;
 }
 
@@ -16,4 +15,56 @@
   border-color: hsl(0, 94%, 66%);
   margin-inline: 0;
   white-space: nowrap;
+}
+
+.button-navbar {
+  font-family: "Rubik", sans-serif;
+  margin-inline: 30px;
+  background: none;
+  color: hsl(0, 0%, 100%);
+  font-size: 1rem;
+  letter-spacing: 3px;
+  border: 3px solid hsl(0, 0%, 100%);
+  border-radius: 5px;
+  text-transform: uppercase;
+  font-weight: 400;
+}
+
+.button-grey {
+  box-shadow: 0px 9px 17px 2px rgba(150, 150, 150, 0.32);
+  background-color: hsla(0, 0%, 100%, 0.659);
+  color: hsla(228, 29%, 21%, 0.961);
+  border: 1px transparent;
+}
+
+.button-tab {
+  display: none;
+}
+
+@media screen and (min-width: 800px) {
+  .button {
+    padding: 15px 25px;
+  }
+  .button-navbar {
+    background-color: hsl(0, 94%, 66%);
+    color: hsl(0, 0%, 100%);
+    border-color: hsl(0, 94%, 66%);
+    margin-inline: 0;
+    margin-left: 20px;
+    white-space: nowrap;
+    padding: 10px 35px;
+    letter-spacing: 1px;
+    font-size: 0.8rem;
+  }
+  .button-tab {
+    display: block;
+    font-family: "Rubik", sans-serif;
+    color: hsl(0, 0%, 100%);
+    background-color: hsl(231, 69%, 60%);
+    border: 1px solid hsl(231, 69%, 60%);
+    border-radius: 5px;
+    padding: 10px 15px;
+    text-wrap: nowrap;
+    width: 100px;
+  }
 }/*# sourceMappingURL=Button.css.map */

@@ -1,5 +1,6 @@
 import {useState} from 'react';
 import '../styles/Features.scss';
+import Button from './Button';
 import Tab1 from '../assets/images/illustration-features-tab-1.svg';
 import Tab2 from '../assets/images/illustration-features-tab-2.svg';
 import Tab3 from '../assets/images/illustration-features-tab-3.svg';
@@ -39,6 +40,13 @@ const Features = () => {
             title = 'Bookmark in one click';
             content = 'Organize your bookmarks however you like. Our simple drag-and-drop interface gives you complete control over how you manage your favourite sites';
       }
+
+    // button props
+    const buttonProps = {
+        text : 'More Info',
+        style : true,
+        className :'button-tab'
+    }
             
     return (
     <>
@@ -95,7 +103,12 @@ const Features = () => {
             <div className='tab-content'>
                 <h2 className='tab-content__title'>{title}</h2>
                 <p className='tab-content__content'>{content}</p>
-                <button className='tab-content_button'>More Info</button>
+                <Button 
+                    text={buttonProps.text} 
+                    buttonStyle={buttonProps.style}
+                    additionalClass={buttonProps.className}
+                />
+                {/* <button className='tab-content_button'>More Info</button> */}
             </div>
         </div>
     </>

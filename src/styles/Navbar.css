@@ -59,17 +59,6 @@ header .navbar .navbar-elements .navbar-elements__item {
 header .navbar .navbar-elements .navbar-elements__item:last-child {
   border-bottom: 0.5px solid hsla(0, 0%, 100%, 0.659);
 }
-header .navbar .navbar-btn {
-  margin-inline: 30px;
-  padding-block: 8px;
-  background: none;
-  color: hsla(0, 0%, 100%, 0.659);
-  font-family: "Rubik", sans-serif;
-  font-size: 1rem;
-  letter-spacing: 3px;
-  border: 2.5px solid hsla(0, 0%, 100%, 0.659);
-  border-radius: 5px;
-}
 header .navbar .navbar-sm {
   display: flex;
   justify-content: center;
@@ -88,7 +77,7 @@ header .responsive_nav {
   transform: none;
 }
 
-@media screen and (min-width: 1100px) {
+@media screen and (min-width: 800px) {
   header {
     padding-inline: 150px;
     letter-spacing: 1px;

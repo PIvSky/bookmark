@@ -1,6 +1,6 @@
-@import '../styles/Fonts.scss';
-@import '../styles/Utilities.scss';
-@import '../styles/Colors.scss';
+@import '../styles/_fonts.scss';
+@import '../styles/_utilities.scss';
+@import '../styles/_colors.scss';
 @import '../styles/_mixin.scss';
 
 .extensions-header {
@@ -11,7 +11,12 @@
     }
     .extensions-desc {
         @include desc-mb;
+        margin-inline: map-get($margin, margin-inline-mobile) 40px;
     }
+}
+
+.extensions-container {
+    margin-inline: map-get($margin, margin-inline-mobile );
 }
 
 @media screen and (min-width: 800px) {
@@ -22,20 +27,23 @@
     }
 
     .extensions-container {
-        width: 60%;
+        max-width: 60%;
         max-height: 400px;
         display: flex;
         flex-direction: row;
         align-items: center;
+        justify-content: center;
         flex-wrap: nowrap;
         margin: 0 auto;
     }
     
     .extensions-container > *:nth-child(2) {
         margin-top: 100px;
+        margin-left: 20px;
     }
     .extensions-container > *:nth-child(3) {
         margin-top: 200px;
+        margin-left: 20px;
       }
 
 }

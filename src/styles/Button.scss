@@ -1,17 +1,17 @@
-@import '../styles/Fonts.scss';
-@import '../styles/Utilities.scss';
-@import '../styles/Colors.scss';
+@import '../styles/_fonts.scss';
+@import '../styles/_utilities.scss';
+@import '../styles/_colors.scss';
 @import '../styles/_mixin.scss';
 
 .button {
     background-color: map-get($colors, primary );
     color: map-get($colors, white-bg );
     margin: 20px auto;
-    padding: 15px 25px;
+    padding: 15px 15px;
     border: 1px solid;
     border-radius: 5px;
     margin-inline: 5px;
-    font-weight: map-get($fonts-weight, button );
+    // font-weight: map-get($fonts-weight, button );
     cursor: pointer;
 }
 
@@ -23,10 +23,59 @@
     white-space: nowrap;
 }
 
-.button-grey {
-    
+.button-navbar {
+    font-family: map-get($fonts, basic );
+    margin-inline: map-get($margin, margin-inline-mobile );
+    background: none;
+    color: map-get($colors, white-bg );
+    font-size: 1rem;
+    letter-spacing: 3px;
+    border: 3px solid map-get($colors, white-bg);
+    border-radius: 5px;
+    text-transform: uppercase;
+    font-weight: map-get($fonts-weight, regular );
 }
 
-.button-navbar {
+.button-grey {
+    box-shadow: 0px 9px 17px 2px rgba(150, 150, 150, 0.32);
+    background-color: map-get($colors, white-col );
+    color: map-get($colors, blue-transparent );
+    border: 1px transparent;
+}
 
+.button-tab {
+    display:none;
+}
+
+@media screen and (min-width:800px) {
+
+    .button {
+        padding: 15px 25px;
+        font-weight: map-get($fonts-weight, button );
+    }
+
+    .button-navbar {
+        background-color: map-get($colors, red-col );
+        color: map-get($colors, white-bg );
+        border-color: map-get($colors, red-col );
+        margin-inline: 0;
+        margin-left: 20px;
+        white-space: nowrap;
+        padding: 10px 35px;
+        letter-spacing: 1px;
+        font-size: map-get($font-size, small );
+    }
+    
+    .button-tab {
+        display: block;
+        font-family: map-get($fonts, basic );
+        color: map-get($colors, white-bg );
+        background-color: map-get($colors, primary );
+        border: 1px solid map-get($colors, primary );
+        border-radius: 5px;
+        padding: 10px 15px;
+        text-wrap: nowrap;
+        width: 100px;
+    }
+    
 }

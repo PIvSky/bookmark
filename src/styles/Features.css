@@ -106,7 +106,7 @@
   line-height: 1.6;
 }
 
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 800px) {
   .features-container .features-content__article {
     font-family: "Rubik", sans-serif;
     font-weight: 400;

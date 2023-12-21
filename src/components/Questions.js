@@ -23,6 +23,13 @@ const Questions = () => {
         },
     ];
 
+    // button props
+    const buttonProps = {
+      text : 'More Info',
+      style : false,
+      className :'button-navbar'
+  }
+
     return (
       <>
         <div className="questions-header">
@@ -42,7 +49,10 @@ const Questions = () => {
           />
         ))}
         <div className="button-container">
-            <Button className="questions-button" content={"More Info"} />
+            <Button 
+              text={buttonProps.text} 
+              buttonStyle={buttonProps.style}
+              additionalClass={buttonProps.className} />
         </div>
       </>
     );

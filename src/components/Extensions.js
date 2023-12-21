@@ -7,6 +7,8 @@ import CardDots from '../assets/images/bg-dots.svg';
 
 const Extensions = () => {
 
+    
+
     const BrowsersData = [
         {
             logo: ChromeLogo,

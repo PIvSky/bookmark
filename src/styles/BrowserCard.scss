@@ -1,11 +1,12 @@
-@import '../styles/Fonts.scss';
-@import '../styles/Utilities.scss';
-@import '../styles/Colors.scss';
+@import '../styles/_fonts.scss';
+@import '../styles/_utilities.scss';
+@import '../styles/_colors.scss';
 @import '../styles/_mixin.scss';
 
 .card-container {
     height: auto;
-    margin: 40px map-get($margin, margin-inline-mobile );
+    min-width: 170px;
+    margin: 40px auto;
 
     -webkit-box-shadow: 0px 0px 36px -23px rgba(66, 68, 90, 1);
     -moz-box-shadow: 0px 0px 36px -23px rgba(66, 68, 90, 1);

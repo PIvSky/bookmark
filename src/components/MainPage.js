@@ -1,7 +1,23 @@
 import '../styles/MainPage.scss';
 import MainImage from '../assets/images/illustration-hero.svg';
+import Button from './Button';
 
 const MainPage = () => {
+
+    // button props
+    const buttonProps = [
+        {
+            text : 'Get it on Chrome',
+            style : false,
+            className :'button-red'
+        },
+        {
+            text : 'Get it on Firefox',
+            style : true,
+            className :'button-grey'
+        },
+    ];
+    
     return (
         <div className='main-container'>
             <div className='main-pic'>
@@ -17,8 +33,16 @@ const MainPage = () => {
                     browser tab and see your sited load instantly. Try it for free.
                 </p>
                 <div className='main-buttons'>
-                    <button className='main-buttons__chrome'>Get it on Chrome</button>
-                    <button className='main-buttons__firefox'>Get it on Firefox</button>
+                    {buttonProps.map((data, index) => (
+                        <Button
+                            key={index}
+                            text={data.text} 
+                            buttonStyle={data.style}
+                            additionalClass={data.className}
+                        />
+                    ))
+                    
+                    }
                 </div>
             </div>
         </div>

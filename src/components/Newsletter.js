@@ -4,6 +4,13 @@ import '../styles/Button.scss';
 
 const Newsletter = () => {
 
+    // button props
+    const buttonProps = {
+        text : 'Contact Us',
+        style : true,
+        className :'button-red'
+    }
+
     return (
         <>
             <div className='newsletter'>
@@ -13,10 +20,9 @@ const Newsletter = () => {
                     <div className='email-container'>
                         <input className='email-container__input' placeholder='Enter your email adress'></input>
                         <Button 
-                            className='email-container__button' 
-                            content={'Contact Us'} 
-                            buttonStyle={true}
-                            additionalClass={'button-red'}
+                            text={buttonProps.text} 
+                            buttonStyle={buttonProps.style}
+                            additionalClass={buttonProps.className}
                         />
                     </div>
                 </div>
