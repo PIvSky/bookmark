@@ -41,4 +41,7 @@
     margin: 0 auto;
     max-width: 1440px;
   }
+  .qa-wrapper .button-container {
+    margin-bottom: 80px;
+  }
 }/*# sourceMappingURL=Questions.css.map */

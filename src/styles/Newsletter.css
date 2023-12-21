@@ -79,8 +79,13 @@
     justify-content: center;
     width: 50%;
   }
-  .newsletter .email-container__input {
+  .newsletter .email-container .input-container__input {
     min-width: 250px;
+    margin-right: 20px;
+    border-bottom-right-radius: 5px;
+    border-bottom-left-radius: 5px;
+  }
+  .newsletter .email-container .input-container__validation {
     margin-right: 20px;
   }
 }/*# sourceMappingURL=Newsletter.css.map */

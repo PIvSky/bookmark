@@ -45,11 +45,15 @@ const Newsletter = () => {
         if (emailBorder && validationText && errorImage) {
             if (!validEmail.test(email) && email !== '') {
             emailBorder.border = '2px solid hsl(0, 94%, 66%)';
+            emailBorder.borderBottomRightRadius = '0px';
+            emailBorder.borderBottomLeftRadius = '0px'
             validationText.display = 'block';
             errorImage.display = 'block';
             } else {
                 alert('Newsletter signed up!')
                 emailBorder.border = '2px solid hsl(0, 0%, 100%)';
+                emailBorder.borderBottomRightRadius = '5px';
+            emailBorder.borderBottomLeftRadius = '5px'
                 validationText.display = 'none';
                 errorImage.display = 'none';
             }

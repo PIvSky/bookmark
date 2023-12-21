@@ -84,10 +84,20 @@
             align-items: center;
             justify-content: center;
             width: 50%;
-            &__input {
-                min-width: 250px;
-                margin-right: 20px;
+
+            .input-container {
+                &__input {
+                    min-width: 250px;
+                    margin-right: 20px;
+                    border-bottom-right-radius: 5px;
+                    border-bottom-left-radius: 5px;
+                }
+
+                &__validation {
+                    margin-right: 20px;
+                }
             }
+            
         }
     }
 }
