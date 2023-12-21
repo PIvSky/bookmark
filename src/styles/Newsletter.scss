@@ -16,6 +16,7 @@
         &__joined {
             @include desc-mb;
             color: map-get($colors, white-bg );
+            letter-spacing: 2px;
         }
 
         &__title {

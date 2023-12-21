@@ -79,7 +79,8 @@
         display: flex;
         justify-content: center;
         position: relative;
-        margin-top: 70px;
+        margin-top: 40px;
+        min-height: 400px;
       
         &__image {
           z-index: 5;
@@ -88,15 +89,28 @@
           margin: auto;
         }
       
-        &__graphic {
-          position: absolute;
-          top: 34px;
-          right: 0px;
-          z-index: -1;
+        // &__graphic {
+        //   position: absolute;
+        //   top: 34px;
+        //   right: 0px;
+        //   z-index: -1;
       
-          rect {
-            fill: map-get($colors, primary);
-          }
+        //   rect {
+        //     fill: map-get($colors, primary);
+        //   }
+        // }
+
+        &__graphic {
+            position: absolute;
+            height: calc(60vw - 40px);
+            max-height: 300px;
+            width: calc(100% - 10vw);
+            background-color: map-get($colors, primary );
+            top: 16vh;
+            right: 25vw;
+            z-index: -1;
+            border-top-right-radius: 90px;
+            border-bottom-right-radius: 90px;
         }
     }
 
@@ -162,8 +176,15 @@
             grid-area: 1 / 1 / 2 / 2;
 
             &__image {
+                width: 100%;
                 margin: map-get($margin, margin-inline-mobile );
                 padding-left: map-get($padding, padding-inline-desktop );
+            }
+
+            &__graphic {
+                top: 12vh;
+                right: 8vw;
+                width: calc(100% - 8vw);
             }
         }
 
@@ -175,19 +196,13 @@
             justify-content: flex-start;
             text-align: start;
 
-            .tab-content__content {
-                margin-top: 0;
+            &__title {
+                text-align: start;
             }
 
-            .tab-content_button {
-                font-family: map-get($fonts, basic );
-                color: map-get($colors, white-bg );
-                background-color: map-get($colors, primary );
-                border: 1px solid map-get($colors, primary );
-                border-radius: 5px;
-                padding: 10px 15px;
-                text-wrap: nowrap;
-                width: 100px;
+            .tab-content__content {
+                margin-top: 0;
+                text-align: start;
             }
         }
     }

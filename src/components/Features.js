@@ -88,17 +88,7 @@ const Features = () => {
                     src={picture}
                     alt={title}
                 />
-                <svg className="tab-pic__graphic" width="100%" height="100%">
-                    <rect
-                        x="-90"
-                        y="0"
-                        width="104%"
-                        height="100%"
-                        rx="90"
-                        ry="90"
-                        fill="none"
-                    />
-                </svg>
+                <div className='tab-pic__graphic' />
             </div>
             <div className='tab-content'>
                 <h2 className='tab-content__title'>{title}</h2>

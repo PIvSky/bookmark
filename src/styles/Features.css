@@ -69,7 +69,8 @@
   display: flex;
   justify-content: center;
   position: relative;
-  margin-top: 70px;
+  margin-top: 40px;
+  min-height: 400px;
 }
 .features-tab .tab-pic__image {
   z-index: 5;
@@ -79,12 +80,15 @@
 }
 .features-tab .tab-pic__graphic {
   position: absolute;
-  top: 34px;
-  right: 0px;
+  height: calc(60vw - 40px);
+  max-height: 300px;
+  width: calc(100% - 10vw);
+  background-color: hsl(231, 69%, 60%);
+  top: 16vh;
+  right: 25vw;
   z-index: -1;
-}
-.features-tab .tab-pic__graphic rect {
-  fill: hsl(231, 69%, 60%);
+  border-top-right-radius: 90px;
+  border-bottom-right-radius: 90px;
 }
 .features-tab .tab-content {
   text-align: center;
@@ -147,8 +151,14 @@
     grid-area: 1/1/2/2;
   }
   .features-tab .tab-pic__image {
+    width: 100%;
     margin: 30px;
     padding-left: 150px;
+  }
+  .features-tab .tab-pic__graphic {
+    top: 12vh;
+    right: 8vw;
+    width: calc(100% - 8vw);
   }
   .features-tab .tab-content {
     grid-area: 1/2/2/3;
@@ -158,17 +168,11 @@
     justify-content: flex-start;
     text-align: start;
   }
+  .features-tab .tab-content__title {
+    text-align: start;
+  }
   .features-tab .tab-content .tab-content__content {
     margin-top: 0;
-  }
-  .features-tab .tab-content .tab-content_button {
-    font-family: "Rubik", sans-serif;
-    color: hsl(0, 0%, 100%);
-    background-color: hsl(231, 69%, 60%);
-    border: 1px solid hsl(231, 69%, 60%);
-    border-radius: 5px;
-    padding: 10px 15px;
-    text-wrap: nowrap;
-    width: 100px;
+    text-align: start;
   }
 }/*# sourceMappingURL=Features.css.map */
