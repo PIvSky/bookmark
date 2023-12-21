@@ -40,6 +40,9 @@ header .navbar .navbar-header .navbar-btn-close {
   background: none;
   border: none;
 }
+header .navbar .navbar-header .navbar-btn-close:active {
+  color: hsl(0, 94%, 66%);
+}
 header .navbar .navbar-header .navbar-btn-close .navbar-btn__icon {
   fill: black;
 }
@@ -61,12 +64,15 @@ header .navbar .navbar-elements {
   margin-inline: 30px;
   margin-top: 0px;
 }
-header .navbar .navbar-elements .navbar-elements__item {
+header .navbar .navbar-elements__item {
   padding: 20px;
   border-top: 0.5px solid hsla(0, 0%, 100%, 0.659);
 }
-header .navbar .navbar-elements .navbar-elements__item:last-child {
+header .navbar .navbar-elements__item:last-child {
   border-bottom: 0.5px solid hsla(0, 0%, 100%, 0.659);
+}
+header .navbar .navbar-elements__item:active {
+  color: hsl(0, 94%, 66%);
 }
 header .navbar .navbar-sm {
   display: flex;
@@ -115,7 +121,13 @@ header .responsive_nav {
     justify-content: flex-end;
     margin: 0px;
   }
-  header .navbar .navbar-btn {
+  header .navbar .navbar-elements__item {
+    cursor: pointer;
+  }
+  header .navbar .navbar-elements__item:hover {
+    color: hsl(0, 94%, 66%);
+  }
+  header .navbar-btn {
     font-size: 0.8rem;
     padding: 15px 30px;
     border: 1px solid hsl(0, 94%, 66%);

@@ -28,6 +28,11 @@
 
         &__element {
             padding-block: 15px;
+            cursor: pointer;
+
+            &:hover {
+                color: map-get($colors, red-col );
+            }
         }
     }
 
@@ -38,6 +43,13 @@
         padding-bottom: 40px;
         &__item{
             padding-inline: 15px;
+            cursor: pointer;
+
+            path {
+                &:hover {
+                    fill: map-get($colors, red-col );
+                }
+            }
         }
     }
 }

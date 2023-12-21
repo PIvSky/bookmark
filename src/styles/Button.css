@@ -3,10 +3,15 @@
   color: hsl(0, 0%, 100%);
   margin: 20px auto;
   padding: 15px 15px;
-  border: 1px solid;
+  border: 2px solid;
   border-radius: 5px;
   margin-inline: 5px;
   cursor: pointer;
+}
+.button:active {
+  color: hsl(231, 69%, 60%);
+  background-color: hsl(0, 0%, 100%);
+  border: 2px solid hsl(231, 69%, 60%);
 }
 
 .button-red {
@@ -15,6 +20,11 @@
   border-color: hsl(0, 94%, 66%);
   margin-inline: 0;
   white-space: nowrap;
+}
+.button-red:active {
+  border-color: hsl(0, 94%, 66%);
+  background-color: hsl(0, 0%, 100%);
+  color: hsl(0, 94%, 66%);
 }
 
 .button-navbar {
@@ -29,12 +39,21 @@
   text-transform: uppercase;
   font-weight: 400;
 }
+.button-navbar:active {
+  color: hsl(0, 94%, 66%);
+  border-color: hsl(0, 94%, 66%);
+}
 
 .button-grey {
   box-shadow: 0px 9px 17px 2px rgba(150, 150, 150, 0.32);
   background-color: hsla(0, 0%, 100%, 0.659);
   color: hsla(228, 29%, 21%, 0.961);
-  border: 1px transparent;
+  border: 2px solid hsl(0, 0%, 100%);
+}
+.button-grey:active {
+  color: hsl(231, 69%, 60%);
+  background-color: hsl(0, 0%, 100%);
+  border-color: hsl(231, 69%, 60%);
 }
 
 .button-tab {
@@ -43,7 +62,7 @@
 
 @media screen and (min-width: 800px) {
   .button {
-    margin-top: 0;
+    margin-top: 20px;
     padding: 15px 25px;
   }
   .button-red {
@@ -59,6 +78,11 @@
     letter-spacing: 1px;
     font-size: 0.8rem;
   }
+  .button-navbar:active {
+    border-color: hsl(0, 94%, 66%);
+    background-color: hsl(0, 0%, 100%);
+    color: hsl(0, 94%, 66%);
+  }
   .button-tab {
     display: block;
     font-family: "Rubik", sans-serif;
@@ -69,5 +93,10 @@
     padding: 10px 15px;
     text-wrap: nowrap;
     width: 100px;
+  }
+  .button-tab:active {
+    color: hsl(231, 69%, 60%);
+    background-color: hsl(0, 0%, 100%);
+    border: 2px solid hsl(231, 69%, 60%);
   }
 }/*# sourceMappingURL=Button.css.map */

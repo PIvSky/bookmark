@@ -39,6 +39,7 @@
   padding-block: 15px;
   border-bottom: 1.2px solid;
   border-inline: none;
+  cursor: pointer;
 }
 .features-container .features-nav__element:first-child {
   border-top: 1px solid;

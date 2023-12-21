@@ -20,6 +20,10 @@
 }
 .footer-nav__element {
   padding-block: 15px;
+  cursor: pointer;
+}
+.footer-nav__element:hover {
+  color: hsl(0, 94%, 66%);
 }
 .footer-socialmedia {
   display: flex;
@@ -29,6 +33,10 @@
 }
 .footer-socialmedia__item {
   padding-inline: 15px;
+  cursor: pointer;
+}
+.footer-socialmedia__item path:hover {
+  fill: hsl(0, 94%, 66%);
 }
 
 @media screen and (min-width: 800px) {

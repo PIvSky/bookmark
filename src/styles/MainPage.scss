@@ -34,7 +34,7 @@
         &__graphic {
             position: absolute;
             height: 75%;
-            width: 100%;
+            width: calc(100% - 25vw);
             background-color: map-get($colors, primary );
             top: 23%;
             left: 25vw;
@@ -88,7 +88,7 @@
                 position: absolute;
                 height: calc(30vw - 60px);
                 max-height: 400px;
-                width: 100%;
+                width: calc(100% - 10vw);
                 background-color: map-get($colors, primary );
                 top: calc(12vw - 10px);
                 left: 10vw;

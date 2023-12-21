@@ -5,6 +5,10 @@
   justify-content: space-between;
   align-content: center;
   border-bottom: 1px solid hsl(229, 8%, 60%);
+  cursor: pointer;
+}
+.question-wrapper .question-card:hover {
+  color: hsl(0, 94%, 66%);
 }
 .question-wrapper .question-card__title {
   font-family: "Rubik", sans-serif;

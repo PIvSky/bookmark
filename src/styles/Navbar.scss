@@ -45,6 +45,10 @@ header {
                 background: none;
                 border: none;
 
+                &:active {
+                    color: map-get($colors, red-col);
+                }
+
                 .navbar-btn__icon{
                     fill: black
                 }
@@ -78,13 +82,18 @@ header {
             margin-inline: map-get($margin, margin-inline-mobile );
             margin-top: 0px;
 
-            .navbar-elements__item {
+            &__item {
                 padding: 20px;
                 border-top: 0.5px solid map-get($colors, white-col);
                 &:last-child{
                     border-bottom: 0.5px solid map-get($colors, white-col);
                 }
+                &:active {
+                    color: map-get($colors, red-col);
+                }
             }
+
+
         }
 
         .navbar-sm {
@@ -140,9 +149,17 @@ header {
                 flex-direction: row;
                 justify-content: flex-end;
                 margin: 0px;
+
+                &__item {
+                    cursor: pointer;
+
+                    &:hover {
+                        color: map-get($colors, red-col );
+                    }
+                }
             }
 
-            .navbar-btn {
+            &-btn {
                 font-size: map-get($font-size, small );
                 padding: 15px 30px;
                 border: 1px solid map-get($colors, red-col);

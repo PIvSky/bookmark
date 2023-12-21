@@ -9,7 +9,7 @@ const MainPage = () => {
         {
             text : 'Get it on Chrome',
             style : false,
-            className :'button-red'
+            className :''
         },
         {
             text : 'Get it on Firefox',
@@ -42,7 +42,6 @@ const MainPage = () => {
                     }
                 </div>
             </div>
-            <div className='pic-graphic' />
         </div>
     )
 }
