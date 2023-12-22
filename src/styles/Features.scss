@@ -175,6 +175,7 @@
             }
 
             &__graphic {
+                max-height: 340px;
                 top: 12vh;
                 right: 8vw;
                 width: calc(100% - 8vw);
