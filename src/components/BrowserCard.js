@@ -6,8 +6,8 @@ const BrowserCard = ({logo, title, version, dots}) => {
     // button props
     const buttonProps = {
         text : 'Add & Install Extension',
-        style : false,
-        className :''
+        style : true,
+        className :'button-browser-card'
     }
 
     return (

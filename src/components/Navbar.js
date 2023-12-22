@@ -33,6 +33,7 @@ const Navbar = () => {
         className :'button-navbar'
     }
 
+    // close button func
     const onClosePopup = () => {
         // close popup
         setShowPopup(false);
@@ -45,10 +46,15 @@ const Navbar = () => {
         }
     };
 
+    // show POPUP after 20sec from loading the page
     useEffect(() => {
-        setTimeout(() => {
-            setShowPopup(true)
+        const timer = setTimeout(() => {
+            setShowPopup(true);
         }, 20000);
+
+        return () => {
+            clearTimeout(timer);
+        };
     },[])
 
 

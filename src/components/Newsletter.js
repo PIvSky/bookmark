@@ -42,8 +42,9 @@ const Newsletter = () => {
         const validationText = validationRef.current && validationRef.current.style;
         const errorImage = errorRef.current && errorRef.current.style;
 
+        // validation of input
         if (emailBorder && validationText && errorImage) {
-            if (!validEmail.test(email) && email !== '') {
+            if (!validEmail.test(email) || email === '') {
             emailBorder.border = '2px solid hsl(0, 94%, 66%)';
             emailBorder.borderBottomRightRadius = '0px';
             emailBorder.borderBottomLeftRadius = '0px'
@@ -53,11 +54,12 @@ const Newsletter = () => {
                 alert('Newsletter signed up!')
                 emailBorder.border = '2px solid hsl(0, 0%, 100%)';
                 emailBorder.borderBottomRightRadius = '5px';
-            emailBorder.borderBottomLeftRadius = '5px'
+                emailBorder.borderBottomLeftRadius = '5px'
                 validationText.display = 'none';
                 errorImage.display = 'none';
             }
         }
+
         console.log(email)
         setEmail('')
     }

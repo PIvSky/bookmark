@@ -7,11 +7,11 @@
     background-color: map-get($colors, primary );
     color: map-get($colors, white-bg );
     margin: 20px auto;
-    padding: 15px 15px;
+    padding: 15px 19px;
     border: 2px solid;
-    border-radius: 5px;
+    border-radius: 8px;
     margin-inline: 5px;
-    // font-weight: map-get($fonts-weight, button );
+    font-weight: map-get($fonts-weight, button );
     cursor: pointer;
     &:active {
         color: map-get($colors, primary);
@@ -40,8 +40,8 @@
     color: map-get($colors, white-bg );
     font-size: 1rem;
     letter-spacing: 3px;
-    border: 3px solid map-get($colors, white-bg);
-    border-radius: 5px;
+    border: 2px solid map-get($colors, white-bg);
+    border-radius: 8px;
     text-transform: uppercase;
     font-weight: map-get($fonts-weight, regular );
 
@@ -54,7 +54,7 @@
 .button-grey {
     box-shadow: 0px 9px 17px 2px rgba(150, 150, 150, 0.32);
     background-color: map-get($colors, white-col );
-    color: map-get($colors, blue-transparent );
+    color: map-get($colors, grey-dark-col );
     border: 2px solid map-get($colors, white-bg );
     &:active {
         color: map-get($colors, primary);
@@ -67,12 +67,15 @@
     display:none;
 }
 
+.button-browser-card{
+    padding-inline: 50px;
+}
+
 @media screen and (min-width:800px) {
 
     .button {
         margin-top: 20px;
         padding: 15px 25px;
-        // font-weight: map-get($fonts-weight, button );
     }
 
     .button-red {
@@ -84,8 +87,6 @@
         color: map-get($colors, white-bg );
         border-color: map-get($colors, red-col );
         margin: 0px 0px 0px 20px;
-        // margin-inline: 0;
-        // margin-left: 20px;
         white-space: nowrap;
         padding: 10px 35px;
         letter-spacing: 1px;
@@ -101,10 +102,11 @@
     .button-tab {
         display: block;
         font-family: map-get($fonts, basic );
+        font-weight: map-get($fonts-weight , medium );
         color: map-get($colors, white-bg );
         background-color: map-get($colors, primary );
-        border: 1px solid map-get($colors, primary );
-        border-radius: 5px;
+        border: 2px solid map-get($colors, primary );
+        border-radius: 8px;
         padding: 10px 15px;
         text-wrap: nowrap;
         width: 100px;
